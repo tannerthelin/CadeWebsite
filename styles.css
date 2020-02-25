@@ -7,11 +7,15 @@
 .image {
     padding: 5px;
     width: 250px;
-    max-height: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
     overflow: hidden;
+    box-shadow: inset 0px 0px 0px 5px white;
+        box-sizing: border-box;
+    background-repeat: no-repeat;
     flex-shrink: 0;    
     position: relative;
-    margin-bottom: 4px;
 }
 
 .image h3 {
@@ -31,3 +35,9 @@
 .image img {
     width: 100%;
 }
+
+@media only screen and (max-width: 600px) {
+    .image {
+      width: 50%;
+    }
+  }
